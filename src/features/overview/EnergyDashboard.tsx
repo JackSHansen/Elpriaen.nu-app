@@ -255,7 +255,7 @@ export function EnergyDashboard() {
 
         new Notification("ElPriser.nu", {
           body: `Dagens laveste pris i ${settings.region} er ${formatPrice(value)} pr. kWh.`,
-          icon: "/icons/icon-192.svg",
+          icon: "/icons/apple-icon.png",
         });
       };
 
@@ -285,7 +285,7 @@ export function EnergyDashboard() {
     <main className="dashboard-shell">
       <header className="topbar">
         <div className="brand">
-          <img className="brand-logo" src="/icons/Group%209.png" alt="ElPrisen.nu logo" />
+          <img className="brand-logo" src="/icons/apple-icon.png" alt="ElPrisen.nu logo" />
           <span>ElPrisen.nu</span>
         </div>
 

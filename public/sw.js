@@ -4,7 +4,7 @@ const OFFLINE_PAGE = "/offline.html";
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
-      return cache.addAll(["/", OFFLINE_PAGE, "/manifest.webmanifest", "/icons/icon-192.svg"]);
+      return cache.addAll(["/", OFFLINE_PAGE, "/manifest.json", "/icons/apple-icon.png"]);
     }),
   );
   self.skipWaiting();

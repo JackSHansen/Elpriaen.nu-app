@@ -12,7 +12,15 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "ElPriser.nu",
   description: "ElPriser.nu app med live priser, historik og indstillinger.",
-  manifest: "/manifest.webmanifest",
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/icons/apple-icon.png", type: "image/png", sizes: "180x180" },
+      { url: "/icons/favicon.ico", type: "image/x-icon", sizes: "16x16" },
+    ],
+    shortcut: [{ url: "/icons/favicon.ico", type: "image/x-icon", sizes: "16x16" }],
+    apple: [{ url: "/icons/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
 };
 
 export default function RootLayout({
