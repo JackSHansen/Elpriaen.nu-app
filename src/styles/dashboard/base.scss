@@ -1,0 +1,44 @@
+.dashboard-shell {
+  min-height: 100vh;
+  padding: 0 0 5.6rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.9rem 0.9rem;
+  background: rgba(20, 20, 22, 0.9);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.brand-logo {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: contain;
+}
+
+.icon-button {
+  background: transparent;
+  color: var(--accent);
+  border: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.desktop-grid {
+  display: none;
+}
+
+.desktop-topbar {
+  display: none;
+}

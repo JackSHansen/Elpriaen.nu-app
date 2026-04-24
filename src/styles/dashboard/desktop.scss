@@ -1,0 +1,117 @@
+@media (min-width: 1000px) {
+  .dashboard-shell {
+    padding: 1.1rem 1rem 1rem;
+  }
+
+  .mobile-topbar,
+  .mobile-content,
+  .mobile-footer {
+    display: none;
+  }
+
+  .desktop-topbar {
+    display: flex;
+  }
+
+  .desktop-grid {
+    display: grid;
+    grid-template-columns: 1.02fr 1fr 1fr;
+    gap: 1.2rem;
+    align-items: start;
+    animation: fadeIn 420ms ease;
+    background: linear-gradient(160deg, rgba(39, 40, 43, 0.95) 0%, rgba(31, 32, 35, 0.95) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 0.65rem;
+    padding: 1rem;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.24);
+  }
+
+  .desktop-grid .panel {
+    min-height: calc(100vh - 8rem);
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .desktop-grid .panel h2 {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .time-window {
+    font-size: 0.86rem;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .price-unit {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  .mini-circle {
+    border: 1px solid rgba(85, 236, 32, 0.6);
+    box-shadow: none;
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+
+  .mini-circle strong {
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .mini-circle span {
+    font-size: 0.58rem;
+  }
+
+  .price-list {
+    gap: 0.4rem;
+  }
+
+  .price-list-item {
+    background: rgba(8, 8, 9, 0.22);
+    border-radius: 0.45rem;
+    padding: 0.43rem 0.7rem;
+    font-size: 0.84rem;
+  }
+
+  .date-field {
+    background: rgba(8, 8, 9, 0.28);
+    border-radius: 0.45rem;
+    padding: 0.5rem 0.7rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(16, 16, 18, 0.68);
+    backdrop-filter: blur(3px);
+    z-index: 30;
+  }
+
+  .settings-modal {
+    width: min(38rem, 90vw);
+    background: #2a2c31;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.55rem;
+    padding: 1.2rem;
+    position: relative;
+    animation: popIn 190ms ease-out;
+  }
+
+  .icon-button.close {
+    position: absolute;
+    right: 0.65rem;
+    top: 0.6rem;
+    font-size: 1.1rem;
+  }
+}
